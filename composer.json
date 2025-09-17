@@ -12,7 +12,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.4.0 <8.4",
+        "php": ">=8.2.0 <8.5",
         "mautic/core-lib": "^4.0"
     }
 }
