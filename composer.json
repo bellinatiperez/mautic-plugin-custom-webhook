@@ -1,0 +1,18 @@
+{
+    "name": "mautic/mautic-plugin-custom-webhook",
+    "description": "Gmail Plugin",
+    "type": "mautic-plugin-custom-webhook",
+    "keywords": [
+        "mautic",
+        "plugin",
+        "integration"
+    ],
+    "extra": {
+        "install-directory-name": "MauticCustomWebhookBundle"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0 <8.1",
+        "mautic/core-lib": "^4.0"
+    }
+}

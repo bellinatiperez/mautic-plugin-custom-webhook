@@ -1,0 +1,46 @@
+{
+  "name": "{contactfield=firstname} {contactfield=lastname}",
+  "email": "{contactfield=email}",
+  "phone": "{contactfield=phone}",
+  "company": "{contactfield=company}",
+  "variables": [
+    {
+      "key": "document",
+      "value": "{contactfield=document}"
+    },
+    {
+      "key": "city",
+      "value": "{contactfield=city}"
+    },
+    {
+      "key": "country",
+      "value": "{contactfield=country}"
+    }
+  ],
+  "metadata": {
+    "campaign_id": "{campaign_id}",
+    "contact_id": "{contactfield=id}",
+    "sent_at": "{date_now}",
+    "timestamp": "{timestamp}",
+    "ip_address": "{contactfield=ipAddress}"
+  },
+  "attachments": [
+    {
+      "fileUrl": "https://example.com/files/{contactfield=document}.pdf",
+      "fileName": "document_{contactfield=firstname}_{contactfield=lastname}.pdf",
+      "fileType": "PDF"
+    },
+    {
+      "fileUrl": "https://example.com/reports/{contactfield=id}/report.json",
+      "fileName": "contact_report_{contactfield=id}.json",
+      "fileType": "JSON"
+    }
+  ],
+  "custom_data": {
+    "source": "mautic_campaign",
+    "version": "1.0",
+    "tags": [
+      "{contactfield=tags}"
+    ]
+  }
+}
