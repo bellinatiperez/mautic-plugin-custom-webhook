@@ -1,6 +1,6 @@
 {
-    "name": "mautic/mautic-plugin-custom-webhook",
-    "description": "Gmail Plugin",
+    "name": "bellinatiperez/mautic-plugin-custom-webhook",
+    "description": "Custom Webhook",
     "type": "mautic-plugin-custom-webhook",
     "keywords": [
         "mautic",
