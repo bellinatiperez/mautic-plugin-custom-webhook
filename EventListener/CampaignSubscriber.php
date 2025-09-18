@@ -42,12 +42,14 @@ class CampaignSubscriber implements EventSubscriberInterface
      */
     public function onCampaignBuild(Events\CampaignBuilderEvent $event): void
     {
+        // Adiciona informações de ícone aos eventos
         $sendCustomWebhookAction = [
             'label'              => 'mautic.custom_webhook.event.send_custom_webhook',
             'description'        => 'mautic.custom_webhook.event.send_custom_webhook_desc',
             'formType'           => CampaignEventCustomWebhookType::class,
             'formTypeCleanMasks' => 'clean',
             'eventName'          => CustomWebhookEvents::ON_CAMPAIGN_TRIGGER_ACTION,
+            'icon'               => 'ri-webhook-fill', // Define o ícone aqui
         ];
         
         $event->addAction('campaign.send_custom_webhook', $sendCustomWebhookAction);
